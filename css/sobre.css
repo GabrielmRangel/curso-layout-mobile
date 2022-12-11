@@ -40,21 +40,32 @@
 }
 
 .sobre__imagem{
-    width: 100vw;
-    max-width: 500px;
-    border-radius: 5px;
+    display: none;
 }
 
-@media screen and (min-width: 1100px){
+@media screen and (min-width: 1024px){
     .sobre{
         display: flex;
-        justify-content: space-between;
-        text-align: center;
+        flex-direction: row;
     }
 
     .sobre__conteudo{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
+        margin-right: 3rem;
+    }
+
+    .sobre__titulo{
+        text-align: left;
+    }
+
+    .sobre__texto--divisao{
+        border-bottom: 1px solid var(--cinza-medio);
+        padding-bottom: 1.5rem;
+    }
+
+    .sobre__imagem{
+        display: block;
+        border-radius: 10px;
+        border: 1px solid var(--cinza-medio);
+        box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.404);
     }
 }

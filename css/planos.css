@@ -105,10 +105,21 @@
     border-color: var(--planos-cartao-mega);
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 768px) {
+    .cartao{
+        max-width: 400px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .cartao{
+        max-width: 300px;
+    }
+    
     .planos__cartoes {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+        align-items: flex-end;
     }
 }

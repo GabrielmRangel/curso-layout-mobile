@@ -50,7 +50,41 @@
 }
 
 .institucional__video {
-    width: 100vw;
-    max-width: 1000px;
+    width: 101vw;
+    max-width: 600px;
     border-radius: 10px;
 }
+
+@media screen and (min-width: 768px){
+    .institucional__contato-email{
+        display: inline-flex;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .institucional__conteudo {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        text-align: center;
+        margin-top: .75rem;
+    }
+
+    .institucional__conteudo--esquerda{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .institucional__video {
+        width: 375px;
+        align-self: flex-end;
+    }
+
+    .institucional__contato-email {
+        display: block;
+    }
+}
+
